@@ -4,6 +4,6 @@ const sWAPI = axios.create({
   headers: { Accept: "application/json", "Content-Type": "application/json" }
 })
 function swapi_get_people_read(payload) {
-  return sWAPI.get(`/people`)
+  return sWAPI.get(`/people`, { params: { format: payload.format } })
 }
 export const apiService = { swapi_get_people_read }
