@@ -1,4 +1,3 @@
-import { Text } from "react-native";
 import { openapi_get_models_read } from "./../../store/openAPI/openapi_response_get_ListModels.slice.js";
 import { swapi_get_people_id_read } from "./../../store/sWAPI/swapi_response_get_Peopledetails.slice.js";
 import { useEffect } from "react";
@@ -27,7 +26,7 @@ const Untitled2 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Text style={styles.wPDymlas}></Text></View>
+          <View style={styles.column1}></View>
           <View style={styles.column2}></View>
           <View style={styles.column3}></View>
         
@@ -49,8 +48,8 @@ const styles = StyleSheet.create({
     flex: 1
   },
   wPDymlas: {
-    width: 100,
-    height: 50,
+    width: 306,
+    height: 157,
     lineHeight: 14,
     fontSize: 14,
     borderRadius: 0
