@@ -17,6 +17,7 @@ const Untitled2 = () => {
   const {
     entities: openapiModels
   } = useSelector(state => state?.openapi_response_get_ListModels);
+  console.log(openapiModels);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
       flex: 1,
