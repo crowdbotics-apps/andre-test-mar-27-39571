@@ -22,7 +22,7 @@ const Untitled3 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Text style={styles.ZhqChjMW}>{response[0]}</Text></View>
+          <View style={styles.column1}><Text style={styles.ZhqChjMW}></Text></View>
           <View style={styles.column2}></View>
           <View style={styles.column3}></View>
         
