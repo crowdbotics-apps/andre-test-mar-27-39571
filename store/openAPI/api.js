@@ -1,5 +1,5 @@
-import axios from "axios"
-import { OPENAPI_TOKEN } from "react-native-dotenv"
+import axios from "axios";
+import { OPENAPI_TOKEN } from "react-native-dotenv";
 const openAPI = axios.create({
   baseURL: "https://api.openai.com/v1",
   headers: {
@@ -7,8 +7,12 @@ const openAPI = axios.create({
     "Content-Type": "application/json",
     Authorization: `Bearer ${OPENAPI_TOKEN}`
   }
-})
+});
+
 function openapi_get_models_read(payload) {
-  return openAPI.get(`/models`)
+  return openAPI.get(`/models`);
 }
-export const apiService = { openapi_get_models_read }
+
+export const apiService = {
+  openapi_get_models_read
+};

@@ -1,3 +1,4 @@
+import { Text } from "react-native";
 import { openapi_get_models_read } from "./../../store/openAPI/openapi_response_get_ListModels.slice.js";
 import { swapi_get_people_id_read } from "./../../store/sWAPI/swapi_response_get_Peopledetails.slice.js";
 import { useEffect } from "react";
@@ -26,7 +27,8 @@ const Untitled2 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}></View>
+          <View style={styles.column1}><Text style={styles.NySAEryr}>{openapiModels[0].data[0].id} - {openapiModels[0].data[0].created}
+          {openapiModels[0].data[1].id} - {openapiModels[0].data[1].created}</Text></View>
           <View style={styles.column2}></View>
           <View style={styles.column3}></View>
         
@@ -50,6 +52,13 @@ const styles = StyleSheet.create({
   wPDymlas: {
     width: 306,
     height: 157,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  NySAEryr: {
+    width: 100,
+    height: 50,
     lineHeight: 14,
     fontSize: 14,
     borderRadius: 0
