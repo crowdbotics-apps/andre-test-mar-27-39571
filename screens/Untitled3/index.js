@@ -1,9 +1,19 @@
+import { swapi_get_people_read } from "./../../store/sWAPI/swapi_response_get_Peopledetails.slice.js";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { Text } from "react-native";
 import React from "react";
 import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
 const Untitled3 = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(swapi_get_people_read({
+      id: 1,
+      format: "json"
+    }));
+  }, []);
   const {
     entities: repsonse
   } = useSelector(state => state.repsonse);
