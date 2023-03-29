@@ -1,3 +1,4 @@
+import { openapi_get_models_read } from "./../../store/openAPI/openapi_response_get_ListModels.slice.js";
 import { swapi_get_people_id_read } from "./../../store/sWAPI/swapi_response_get_Peopledetails.slice.js";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -10,6 +11,7 @@ const Untitled2 = () => {
     dispatch(swapi_get_people_id_read({
       format: "json"
     }));
+    dispatch(openapi_get_models_read({}));
   }, []);
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
