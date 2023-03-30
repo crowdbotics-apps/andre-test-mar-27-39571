@@ -27,9 +27,8 @@ const Untitled2 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Text style={styles.NySAEryr}>{openapiModels[0].data[0].id} - {openapiModels[0].data[0].created}
-          {openapiModels[0].data[1].id} - {openapiModels[0].data[1].created}</Text></View>
-          <View style={styles.column2}></View>
+          <View style={styles.column1}><Text style={styles.NySAEryr}>Model 01 - ID: {openapiModels[0].data[0].id}</Text><Text style={styles.ErqQgqZF}>Model 01 - Created:{openapiModels[0].data[0].created}</Text><Text style={styles.ynCJpTWd}>Model 02 - ID:           {openapiModels[0].data[1].id}</Text><Text style={styles.GrqtXtHv}>Model 02 - Created: {openapiModels[0].data[1].created}</Text></View>
+          
           <View style={styles.column3}></View>
         
         </ScrollView>
@@ -57,7 +56,35 @@ const styles = StyleSheet.create({
     borderRadius: 0
   },
   NySAEryr: {
+    width: 335,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  RzXsMHqE: {
     width: 100,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  ErqQgqZF: {
+    width: 336,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  ynCJpTWd: {
+    width: 334,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0
+  },
+  GrqtXtHv: {
+    width: 336,
     height: 50,
     lineHeight: 14,
     fontSize: 14,
