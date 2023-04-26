@@ -22,7 +22,7 @@ const Untitled2 = () => {
       backgroundColor: '#f0f0f1'
     }}>
         
-          <View style={styles.column1}><Text style={styles.jZXlZIlU}>model ID: {openapi_response_get_ListModels[0]?.data[0]?.id}</Text><Text style={styles.mNhuZhiG}>model created: {openapi_response_get_ListModels[0]?.data[0]?.created}</Text><Text style={styles.sXFnsKTM}>model owned_by: {openapi_response_get_ListModels[0]?.data[0]?.owned_by}</Text></View>
+          <View style={styles.column1}><Text style={styles.jZXlZIlU}>model ID: {openapi_response_get_ListModels[0]?.data[0]}</Text></View>
           <View style={styles.column2}></View>
           <View style={styles.column3}></View>
         
@@ -44,20 +44,6 @@ const styles = StyleSheet.create({
     flex: 1
   },
   jZXlZIlU: {
-    width: 335,
-    height: 50,
-    lineHeight: 14,
-    fontSize: 14,
-    borderRadius: 0
-  },
-  mNhuZhiG: {
-    width: 334,
-    height: 50,
-    lineHeight: 14,
-    fontSize: 14,
-    borderRadius: 0
-  },
-  sXFnsKTM: {
     width: 335,
     height: 50,
     lineHeight: 14,
